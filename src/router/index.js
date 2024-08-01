@@ -17,4 +17,4 @@ routes.get('/',(req,res)=>{
 routes.use('/mentor',mentorRoutes)
 routes.use('/students',studentRoutes)
 routes.use('/assign',assiningRoutes)
-export default routes
+export default routes 

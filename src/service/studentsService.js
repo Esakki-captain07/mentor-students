@@ -24,7 +24,7 @@ const createStudent = async(req,res)=>{
     }
 }
 
-const getStudentsWithoutMentor = async (req, res) => {
+const studentsWithoutMentor = async (req, res) => {
     try {
         const students = await studentsModel.find({ mentor: null });
         res.status(200).send(students);
@@ -60,6 +60,6 @@ const mentorForStudent = async(req,res)=>{
 
 export default{
     createStudent,
-    getStudentsWithoutMentor,
+    studentsWithoutMentor,
     mentorForStudent
 }
